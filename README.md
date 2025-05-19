@@ -8,6 +8,6 @@ Currently, the project includes programs capable of detecting Denial of Service 
 
 ## System specifications
 
-OS: Kali 2025.1
-Kernel Version: 6.12.25-amd64
-Libbpf version: 1.5.0
++ OS: Kali 2025.1
++ Kernel Version: 6.12.25-amd64
++ Libbpf version: 1.5.0
