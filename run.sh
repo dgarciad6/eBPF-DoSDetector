@@ -25,7 +25,7 @@ sudo ./main &
 
 trap handler SIGINT
 
-wait #Soy un genio
+wait
 
 echo "[+] Todo limpio. ¡Buen trabajo!"
 fi

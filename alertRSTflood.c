@@ -13,7 +13,6 @@
  
  #define MAX_RST_THRESHOLD 100
  
- //Mapa para contar paquetes SYN sin ACK
  struct {
      __uint(type, BPF_MAP_TYPE_HASH);
      __uint(max_entries, 1024);

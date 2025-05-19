@@ -6,7 +6,7 @@ LIBBPF_LDLIBS = -lbpf -lelf
 CC = gcc
 
 INTERFAZ = eth0
-PROG ?= icmp_counter
+PROG ?= alertSYNflood
 BPF_SRC = $(PROG).c
 BPF_OBJ = $(PROG).o
 USER_BIN = main
@@ -26,7 +26,7 @@ attach:
 detach:
 	sudo tc filter delete dev $(INTERFAZ) ingress || true
 	sudo tc qdisc del dev $(INTERFAZ) clsact 2>/dev/null || true
-	sudo rm -f /sys/fs/bpf/tc/globals/$(PROG)
+	sudo rm -f /sys/fs/bpf/tc/globals/*
 	rm -f *.o
 clean:
 	rm -f $(USER_BIN) *.o
